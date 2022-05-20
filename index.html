@@ -34,7 +34,7 @@
             }
             
             .container {
-              max-width: 2100px;
+              max-width: 800px;
               margin: auto;
               display: flex;
               justify-content: center;
@@ -46,7 +46,7 @@
               border-radius: 10px;
               box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
               position: absolute;
-              width: 12.5%;
+              width: 33.33%;
               transition: all 400ms ease;
               background-size: cover;
               background-position: center;
@@ -86,21 +86,6 @@
             <div class="cards" style="background-image: url('WechatIMG4.jpeg?x-oss-process=image/auto-orient,1/resize,m_fill,w_200,h_500,/quality,q_90')">
                 <div class="cards__inner"></div>
             </div>
-            <div class="cards" style="background-image: url('WechatIMG5.jpeg?x-oss-process=image/auto-orient,1/resize,m_fill,w_200,h_500,/quality,q_90')">
-                <div class="cards__inner"></div>
-            </div>
-            <div class="cards" style="background-image: url('WechatIMG6.jpeg?x-oss-process=image/auto-orient,1/resize,m_fill,w_200,h_500,/quality,q_90')">
-                <div class="cards__inner"></div>
-            </div>
-            <div class="cards" style="background-image: url('WechatIMG7.jpeg?x-oss-process=image/auto-orient,1/resize,m_fill,w_200,h_500,/quality,q_90')">
-                <div class="cards__inner"></div>
-            </div>
-            <div class="cards" style="background-image: url('WechatIMG8.jpeg?x-oss-process=image/auto-orient,1/resize,m_fill,w_200,h_500,/quality,q_90')">
-                <div class="cards__inner"></div>
-            </div>
-            <div class="cards" style="background-image: url('WechatIMG9.jpeg?x-oss-process=image/auto-orient,1/resize,m_fill,w_200,h_500,/quality,q_90')">
-                <div class="cards__inner"></div>
-            </div>
         </div>
         
           
@@ -108,7 +93,7 @@
         const cards = document.querySelectorAll('.cards');
         
         const setClasses = () => {
-          const classes = ['1', '2', '3','4','5','6','7','8'];
+          const classes = ['left', 'active', 'right'];
           cards.forEach((card, index) => card.classList.add(classes[index]));
         };
         
