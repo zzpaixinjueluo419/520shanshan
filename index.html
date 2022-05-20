@@ -11,6 +11,12 @@
 		<script type="text/javascript" src="./file/jscex-async-powerpack.min.js"></script>
 		<script type="text/javascript" src="./file/functions.js" charset="utf-8"></script>
 		<script type="text/javascript" src="./file/love.js" charset="utf-8"></script>
+        <script>
+            // 将以下代码添加到js入口函数内即可
+            document.addEventListener('click', function() {
+                document.getElementById('audios').play()
+            })
+        </script>
 	    <style type="text/css">
         </style>
 </head>
@@ -21,12 +27,6 @@
                 <source src="renxi.mp3" type="audio/mp3" />
                 <embed height="100" width="100" src="renxi.mp3" />
             </audio>
-            <script>
-                // 将以下代码添加到js入口函数内即可
-                document.addEventListener('click', function() {
-                    document.getElementById('audios').play()
-                })
-            </script>
             <div id="wrap">
                 <div id="text">
                     <div id="code"> <font color="#FF0000"> <span class="say">亲爱的宝宝，我爱你</span><br>
